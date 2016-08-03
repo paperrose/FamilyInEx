@@ -1,0 +1,48 @@
+<!--Вынести константы-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.artfonapps.familyinex.views.fragments.LoadingFragment">
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:gravity="center">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/spinner_image" android:scaleType="fitCenter"/>
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/loadingProgress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminateOnly="true"
+            android:indeterminateDrawable="@drawable/spinner_loader" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:gravity="center">
+            <ProgressBar
+                android:id="@+id/loadingProgress2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:indeterminateOnly="true"
+                android:indeterminateDrawable="@drawable/spinner_loader_inverse" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent" android:gravity="center"
+        android:layout_marginTop="40dp" android:textSize="25sp"
+        android:textStyle="bold" android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content" android:text="Загружаем"/>
+
+</LinearLayout>

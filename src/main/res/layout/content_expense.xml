@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/colorPrimary">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" android:gravity="center">
+            <ProgressBar
+                android:id="@+id/expenseTypeProgress1"
+                android:layout_width="@dimen/progress_max"
+                android:layout_height="@dimen/progress_max"
+                android:layout_gravity="center"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminate="false"
+                android:progress="15"
+                android:max="100"
+                android:secondaryProgress="100"
+                android:progressDrawable="@drawable/circular_progress" />
+
+            <LinearLayout
+                android:layout_width="@dimen/progress_max"
+                android:layout_height="@dimen/progress_max"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/expenseType1"
+                    android:layout_width="@dimen/progress_min"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/progress_min"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ProgressBar
+                android:id="@+id/expenseTypeProgress2"
+                android:layout_width="@dimen/progress_max"
+                android:layout_height="@dimen/progress_max"
+                android:layout_gravity="center"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminate="false"
+                android:progress="30"
+                android:max="100"
+                android:secondaryProgress="100"
+                android:progressDrawable="@drawable/circular_progress" />
+            <LinearLayout
+                android:layout_width="@dimen/progress_max"
+                android:layout_height="@dimen/progress_max"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/expenseType2"
+                    android:layout_width="@dimen/progress_min"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/progress_min"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <RelativeLayout android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ProgressBar
+                android:id="@+id/expenseTypeProgress3"
+                android:layout_width="@dimen/progress_max"
+                android:layout_height="@dimen/progress_max"
+                android:layout_gravity="center"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminate="false"
+                android:progress="45"
+                android:max="100"
+                android:secondaryProgress="100"
+                android:progressDrawable="@drawable/circular_progress" />
+
+            <LinearLayout
+                android:layout_width="@dimen/progress_max"
+                android:layout_height="@dimen/progress_max"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/expenseType3"
+                    android:layout_width="@dimen/progress_min"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/progress_min"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ProgressBar
+                android:id="@+id/expenseTypeProgress4"
+                android:layout_width="@dimen/progress_max"
+                android:layout_height="@dimen/progress_max"
+                android:layout_gravity="center"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminate="false"
+                android:progress="60"
+                android:max="100"
+                android:secondaryProgress="100"
+                android:progressDrawable="@drawable/circular_progress" />
+
+            <LinearLayout
+                android:layout_width="@dimen/progress_max"
+                android:layout_height="@dimen/progress_max"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/expenseType4"
+                    android:layout_width="@dimen/progress_min"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/progress_min"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <RelativeLayout android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ProgressBar
+                android:id="@+id/expenseTypeProgress5"
+                android:layout_width="@dimen/progress_max"
+                android:layout_height="@dimen/progress_max"
+                android:layout_gravity="center"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminate="false"
+                android:progress="75"
+                android:max="100"
+                android:secondaryProgress="100"
+                android:progressDrawable="@drawable/circular_progress" />
+
+            <LinearLayout
+                android:layout_width="@dimen/progress_max"
+                android:layout_height="@dimen/progress_max"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/expenseType5"
+                    android:layout_width="@dimen/progress_min"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/progress_min"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ProgressBar
+                android:id="@+id/expenseTypeProgress6"
+                android:layout_width="@dimen/progress_max"
+                android:layout_height="@dimen/progress_max"
+                android:layout_gravity="center"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminate="false"
+                android:progress="90"
+                android:max="100"
+                android:secondaryProgress="100"
+                android:progressDrawable="@drawable/circular_progress" />
+
+            <LinearLayout
+                android:layout_width="@dimen/progress_max"
+                android:layout_height="@dimen/progress_max"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/expenseType6"
+                    android:layout_width="@dimen/progress_min"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/progress_min"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

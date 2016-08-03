@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Вынести константы-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/horizontal_gradient"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:gravity="end" android:id="@+id/shown"
+        android:layout_height="match_parent" android:layout_weight="1" android:orientation="horizontal">
+        <ImageButton android:layout_gravity="center" android:id="@+id/edit"
+            android:background="@null"
+            android:layout_width="45dp" android:layout_marginRight="20dp"
+            android:layout_height="45dp" android:src="@drawable/edit" android:scaleType="fitCenter"/>
+        <ImageButton android:layout_gravity="center" android:id="@+id/remove"
+            android:background="@null"
+            android:layout_width="45dp" android:layout_marginRight="20dp"
+            android:layout_height="45dp" android:src="@drawable/remove" android:scaleType="fitCenter" />
+    </LinearLayout>
+</LinearLayout>

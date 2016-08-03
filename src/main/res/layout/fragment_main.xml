@@ -1,0 +1,101 @@
+<!--Вынести константы-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.artfonapps.familyinex.views.fragments.MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:background="@drawable/main_screen_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawablePadding="32dp"
+                android:paddingLeft="32dp"
+                android:textSize="24dp"
+                android:drawableLeft="@drawable/income"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/incomesButton"
+                android:text="@string/income_text"
+                android:textAlignment="textStart"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button android:orientation="horizontal"
+                android:background="@drawable/main_screen_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorAccent"
+                android:text="@string/expense_text"
+                android:id="@+id/expensesButton"
+                android:textAlignment="textStart"
+                android:drawablePadding="32dp"
+                android:paddingLeft="32dp"
+                android:textSize="24dp"
+                android:drawableLeft="@drawable/expense"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button android:orientation="horizontal"
+                android:background="@drawable/main_screen_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="textStart"
+                android:drawablePadding="32dp"
+                android:paddingLeft="32dp"
+                android:textSize="24dp"
+                android:textColor="@color/colorAccent"
+                android:text="@string/statistics_text"
+                android:drawableLeft="@drawable/statistics"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button android:orientation="horizontal"
+                android:background="@drawable/main_screen_button"
+                android:layout_width="match_parent"
+                android:drawablePadding="32dp"
+                android:paddingLeft="32dp"
+                android:textSize="24dp"
+                android:textAlignment="textStart"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorAccent"
+                android:text="@string/settings_text"
+                android:drawableLeft="@drawable/settings"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

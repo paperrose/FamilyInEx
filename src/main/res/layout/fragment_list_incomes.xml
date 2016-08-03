@@ -1,0 +1,126 @@
+<!--Вынести константы-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorPrimary"
+    tools:context="com.artfonapps.familyinex.views.fragments.ListExpensesFragment">
+    <ImageView android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent" android:padding="@dimen/activity_horizontal_margin"
+        android:layout_height="match_parent" android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:weightSum="4">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="3">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView android:layout_marginTop="5dp"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="21sp"                     android:text="План:"/>
+                        <TextView android:layout_marginTop="5dp"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="21sp"
+                            android:layout_height="wrap_content"        android:text="Факт:" />
+                        <TextView android:layout_marginTop="5dp"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="21sp"
+                            android:layout_height="wrap_content"    android:text="Остаток:"  />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:gravity="end"
+                        android:layout_height="match_parent">
+                        <TextView android:layout_marginTop="5dp"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/planned"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="21sp"
+                            android:text="0 руб."/>
+                        <TextView android:layout_marginTop="5dp"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorAccent"
+                            android:id="@+id/fact"
+                            android:textSize="21sp"
+                            android:layout_height="wrap_content" android:text="0 руб." />
+                        <TextView android:layout_marginTop="5dp"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:id="@+id/balance"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="21sp"
+                            android:layout_height="wrap_content" android:text="0 руб."  />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ListView android:background="@drawable/list_background"
+                    android:layout_width="match_parent"
+                    android:divider="@color/colorPrimaryDark"
+                    android:dividerHeight="1dp"
+                    android:id="@+id/incomes"
+                    android:layout_height="match_parent" android:layout_weight="1">
+
+                </ListView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="200dp" android:orientation="vertical" android:id="@+id/sortTypesLayout"
+
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content">
+                <ListView android:background="@drawable/sort_list_background"
+                    android:padding="3dp"
+                    android:layout_width="match_parent" android:id="@+id/sortTypes"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+        <LinearLayout android:id="@+id/listButtons"
+            android:layout_width="match_parent" android:gravity="end"
+            android:background="@drawable/horizontal_gradient"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+            <ImageButton android:layout_gravity="center" android:id="@+id/sort"
+                android:background="@null"
+                android:layout_width="35dp" android:layout_marginRight="20dp"
+                android:layout_height="35dp" android:src="@drawable/sort_down_date" android:scaleType="fitCenter"/>
+            <ImageButton android:layout_gravity="center" android:id="@+id/insert"
+                android:background="@null"
+                android:layout_width="35dp" android:layout_marginRight="20dp"
+                android:layout_height="35dp" android:src="@drawable/add" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

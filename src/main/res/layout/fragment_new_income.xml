@@ -1,0 +1,82 @@
+<!--Вынести константы-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.artfonapps.familyinex.views.fragments.NewExpenseFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/backImage" android:scaleType="centerCrop"/>
+        <FrameLayout android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" android:background="@drawable/central_gradient"></FrameLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp" android:orientation="vertical"
+        android:background="@color/colorPrimary">
+        <LinearLayout
+            android:layout_width="match_parent" android:gravity="center_vertical"
+            android:layout_height="match_parent" android:layout_weight="4"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="horizontal"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent" android:gravity="center_vertical"
+                    android:layout_height="match_parent" android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/sum"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:inputType="number|numberDecimal"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/colorDisabled"
+                        android:textColor="@color/colorAccent"
+                        android:background="@drawable/familyinex_edittext"
+                        android:layout_width="150dp" android:hint="Сумма"
+                        android:layout_height="wrap_content" android:textSize="18dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:layout_height="match_parent" android:layout_weight="1">
+                    <ToggleButton
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_width="150dp"
+                        android:id="@+id/payType"
+                        android:background="@drawable/choose_type_button"
+                        android:textOff=""
+                        style="?android:attr/borderlessButtonStyle"
+                        android:textOn=""
+                        android:layout_height="50dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+                <Button
+                    android:id="@+id/accept_button"
+                    android:background="@drawable/accept_button"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
